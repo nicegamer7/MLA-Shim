@@ -1,6 +1,12 @@
 <?php
 /**
- * Plugin Name: MLA Shim
+ * Plugin Name:       MLA Shim
+ * Plugin URI:        https://example.com/plugins/the-basics/
+ * Description:       An intermediate plugin for MLA.
+ * Version:           1.0.0
+ * Author:            Kermina Awad
+ * License:           GPL v3 or later
+ * License URI:       https://www.gnu.org/licenses/gpl-3.0.html
  */
 
 function mla_shim_function($atts) {
@@ -22,15 +28,16 @@ function mla_shim_function($atts) {
 		foreach($values as $i => $value) {
 			if ($a['columns'] != 0 && $i != 0 && $i % $a['columns'] == 0) $html .= '</div><div class="shim-column">';
 			$val = explode($a['delimiter'], $value);
-			$html .= "[{$a['shortcode']}";
+			$short = "[{$a['shortcode']}";
 			if (!empty($a['content'])) $content = array_pop($val);
 
 			foreach($val as $j => $par) {
-				$html .= " {$parameters[$j]}={$par}";
+				$short .= " {$parameters[$j]}={$par}";
 			}
 
-			$html .= ']';
-			if (!empty($content)) $html .= "{$content}[/{$a['shortcode']}]";
+			$short .= ']';
+			if (!empty($content)) $short .= "{$content}[/{$a['shortcode']}]";
+      $html .= do_shortcode($short);
 		}
 
 		$html .= '</div>';
