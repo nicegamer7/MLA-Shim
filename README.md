@@ -21,11 +21,11 @@ The following is an example of how to use this pluin.
 Which will result in the following
 ```
 <div class="shim-column">
-  [the_short source={+filelink_url+} thumb={+thumbnail_url+} type=thumb]{+title+}[/dflip]
-  [the_short source={+filelink_url+} thumb={+thumbnail_url+} type=thumb]{+title+}[/dflip]
+  [the_short source={+filelink_url+} thumb={+thumbnail_url+} type=thumb]{+title+}[/the_short]
+  [the_short source={+filelink_url+} thumb={+thumbnail_url+} type=thumb]{+title+}[/the_short]
 </div>
 <div class="shim-column">
-  [the_short source={+filelink_url+} thumb={+thumbnail_url+} type=thumb]{+title+}[/dflip]
-  [the_short source={+filelink_url+} thumb={+thumbnail_url+} type=thumb]{+title+}[/dflip]
+  [the_short source={+filelink_url+} thumb={+thumbnail_url+} type=thumb]{+title+}[/the_short]
+  [the_short source={+filelink_url+} thumb={+thumbnail_url+} type=thumb]{+title+}[/the_short]
 </div>
 ```
