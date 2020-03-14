@@ -25,14 +25,14 @@ function mla_shim_function($atts) {
     $values = explode(',', $a['values']);
     $html = '<div class="shim-column">';
 
-    foreach($values as $i => $value) {
+    foreach ($values as $i => $val) {
       if ($a['columns'] != 0 && $i != 0 && $i % $a['columns'] == 0) $html .= '</div><div class="shim-column">';
-      $val = explode($a['delimiter'], $value);
+      $val = explode($a['delimiter'], $val);
       $short = "[{$a['shortcode']}";
       if (!empty($a['content'])) $content = array_pop($val);
 
-      foreach($val as $j => $par) {
-        $short .= " {$parameters[$j]}={$par}";
+      foreach ($val as $j => $p) {
+        $short .= " {$parameters[$j]}={$p}";
       }
 
       $short .= ']';
