@@ -1,5 +1,5 @@
 # MLA-Shim
-An addon for the WordPress Plugin "Media Library Assistant".
+An intermediate plugin for the WordPress Plugin "Media Library Assistant".
 
 # Usage
 This plugin is to be used with Media Library Assistant Alternate Shortcode. See the Example Usage section below.
