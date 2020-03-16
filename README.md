@@ -8,9 +8,9 @@ __Parameters:__
 - shortcode (required), the shortcode to use
 - parameters (required), the name of the accepted parameters of the above shortcode
 - values (required), the corresponding values of the above parameters
-- content (defaults to ''), if set to anything, the final value from above will be used as content for the shortcode
-- delimiter (defaults to '|'), the character to split the item values by
-- columns (defaults to 0), the number of columns (number of shortcodes per div). a value of 0 indicates all items will be contained by one div
+- content (defaults to `''`), if set to anything, the final value from above will be used as content for the shortcode
+- delimiter (defaults to `'|'`), the character to split the item values by (cannot be `','`)
+- columns (defaults to `0`), the number of columns (number of shortcodes per div). a value of `0` indicates all items will be contained by one div
 
 # Example Usage
 The following is an example of how to use this pluin.
