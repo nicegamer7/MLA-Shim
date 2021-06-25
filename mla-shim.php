@@ -19,11 +19,12 @@ function mla_shim_function($atts) {
         'columns' => 0
     ), $atts);
 
+    $html = '';
     if (!empty($a['shortcode']) && !empty($a['parameters']) && !empty($a['values'])) {
         if ($a['columns'] < 0) $a['columns'] = 0;
         $parameters = explode(',', $a['parameters']);
         $values = explode(',', $a['values']);
-        $html = '<div class="shim-column">';
+        $html .= '<div class="shim-column">';
 
         foreach ($values as $i => $val) {
             if ($a['columns'] != 0 && $i != 0 && $i % $a['columns'] == 0) $html .= '</div><div class="shim-column">';
@@ -41,8 +42,9 @@ function mla_shim_function($atts) {
         }
 
         $html .= '</div>';
-        return $html;
     }
+
+    return $html;
 }
 
 add_shortcode('mla_shim', 'mla_shim_function');
