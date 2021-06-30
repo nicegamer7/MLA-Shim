@@ -15,7 +15,7 @@ __Parameters:__
 # Example Usage
 The following is an example of how to use this plugin.
 ```
-[mla_gallery attachment_category="the-cat" numberposts=4 mla_caption="{+title+}" mla_style=none mla_alt_shortcode="mla_shim" shortcode="the_short" mla_alt_ids_name="values" mla_alt_ids_value="{+filelink_url+}|{+thumbnail_url+}|thumb|{+query:mla_caption+}" parameters="source,thumb,type" items_per_container=2 content="TRUE"]
+[mla_gallery attachment_category="the-cat" numberposts=4 mla_style="none" mla_alt_shortcode="mla_shim" shortcode="the_short" mla_alt_ids_name="values" mla_alt_ids_value="{+filelink_url+}|{+thumbnail_url+}|thumb|{+title+}" parameters="source,thumb,type" items_per_container=2 content="TRUE"]
 ```
 
 Which will result in the following
