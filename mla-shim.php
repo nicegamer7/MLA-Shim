@@ -16,18 +16,18 @@ function mla_shim_function($atts) {
         'values' => '',
         'content' => '',
         'delimiter' => '|',
-        'columns' => 0
+        'items_per_container' => 0
     ), $atts);
 
     $html = '';
     if (!empty($a['shortcode']) && !empty($a['parameters']) && !empty($a['values'])) {
-        if ($a['columns'] < 0) $a['columns'] = 0;
+        if ($a['items_per_container'] < 0) $a['items_per_container'] = 0;
         $parameters = explode(',', $a['parameters']);
         $values = explode(',', $a['values']);
-        $html .= '<div class="shim-column">';
+        $html .= '<div class="shim-container">';
 
         foreach ($values as $i => $val) {
-            if ($a['columns'] != 0 && $i != 0 && $i % $a['columns'] == 0) $html .= '</div><div class="shim-column">';
+            if ($a['items_per_container'] != 0 && $i != 0 && $i % $a['items_per_container'] == 0) $html .= '</div><div class="shim-container">';
             $val = explode($a['delimiter'], $val);
             $short = "[{$a['shortcode']}";
             if (!empty($a['content'])) $content = array_pop($val);
