@@ -21,11 +21,11 @@ The following is an example of how to use this plugin.
 Which will result in the following
 ```
 <div class="shim-container">
-  [the_short source={+filelink_url+} thumb={+thumbnail_url+} type=thumb]{+title+}[/the_short]
-  [the_short source={+filelink_url+} thumb={+thumbnail_url+} type=thumb]{+title+}[/the_short]
+  [the_short source="{+filelink_url+}" thumb="{+thumbnail_url+}" type="thumb"]{+title+}[/the_short]
+  [the_short source="{+filelink_url+}" thumb="{+thumbnail_url+}" type="thumb"]{+title+}[/the_short]
 </div>
 <div class="shim-container">
-  [the_short source={+filelink_url+} thumb={+thumbnail_url+} type=thumb]{+title+}[/the_short]
-  [the_short source={+filelink_url+} thumb={+thumbnail_url+} type=thumb]{+title+}[/the_short]
+  [the_short source="{+filelink_url+}" thumb="{+thumbnail_url+}" type="thumb"]{+title+}[/the_short]
+  [the_short source="{+filelink_url+}" thumb="{+thumbnail_url+}" type="thumb"]{+title+}[/the_short]
 </div>
 ```

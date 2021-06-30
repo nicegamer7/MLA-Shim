@@ -33,7 +33,7 @@ function mla_shim_function($atts) {
             if (!empty($a['content'])) $content = array_pop($val);
 
             foreach ($val as $j => $p) {
-                $short .= " {$parameters[$j]}={$p}";
+                $short .= " {$parameters[$j]}=\"{$p}\"";
             }
 
             $short .= ']';
