@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:       MLA Shim
- * Plugin URI:        https://example.com/plugins/the-basics/
+ * Plugin URI:        https://github.com/nicegamer7/MLA-Shim
  * Description:       An intermediate plugin for MLA.
  * Version:           1.0.0
  * Author:            Kermina Awad
